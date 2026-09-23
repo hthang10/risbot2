@@ -84,17 +84,6 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([hokuyo_launch_file]),
         ),
 
-        # Node to connect odom and base_footprint (Static Transform Publisher)
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='static_tf_pub_odom_to_base_footprint',
-            output='screen',
-            arguments=['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', 'odom', 'base_footprint']
-        ),
-
-        # Node to connect base_link and zed_camera_link (Static Transform Publisher)
-        # Bạn có thể thay đổi các tham số trong arguments (x, y, z, yaw, pitch, roll) cho khớp với vị trí thực tế của camera trên robot.
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',

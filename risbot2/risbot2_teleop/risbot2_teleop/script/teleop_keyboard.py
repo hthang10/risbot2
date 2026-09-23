@@ -9,11 +9,11 @@ from geometry_msgs.msg import Twist
 from rclpy.qos import QoSProfile
 
 # Tốc độ tối đa và bước thay đổi vận tốc
-RISBOT2_MAX_LIN_VEL = 0.26
-RISBOT2_MAX_ANG_VEL = 1.82
+RISBOT2_MAX_LIN_VEL = 1.5
+RISBOT2_MAX_ANG_VEL = 2.5
 
-LIN_VEL_STEP_SIZE = 0.01
-ANG_VEL_STEP_SIZE = 0.01
+LIN_VEL_STEP_SIZE = 0.05
+ANG_VEL_STEP_SIZE = 0.1
 
 msg = """
 Control Your RISBOT2!

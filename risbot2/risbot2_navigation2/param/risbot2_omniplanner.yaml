@@ -1,0 +1,16 @@
+# Omniplanner plugin config for RISBOT2
+# This file is loaded by omniplanner_node via the plugin_config_path parameter.
+#
+# Robot type "phoenix" publishes nav_msgs/Path on the compiled_plan_out topic,
+# which is consumed by the plan_follower_node to generate cmd_vel commands.
+
+robots:
+  - type: phoenix
+    robot_name: risbot2
+    robot_type: differential
+    body_frame: base_link
+
+planners:
+  goto_points_planner:
+    plugin:
+      type: GotoPoints

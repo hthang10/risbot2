@@ -25,12 +25,12 @@ def generate_launch_description():
         'hokuyo_launch_file',
         default=os.path.join(get_package_share_directory('urg_node2'), 'launch', 'urg_node2.launch.py'))
     
-    t265_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            os.path.join(get_package_share_directory('realsense2_camera'), 'launch', 'rs_launch.py')
-        ]),
-        launch_arguments={'enable_pose_jumping': 'false'}.items(),
-    )
+    # t265_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource([
+    #         os.path.join(get_package_share_directory('realsense2_camera'), 'launch', 'rs_launch.py')
+    #     ]),
+    #     launch_arguments={'enable_pose_jumping': 'false'}.items(),
+    # )
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
 
@@ -55,16 +55,16 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([hokuyo_launch_file]),
         ),
 
-        t265_launch,
+        # t265_launch,
 
         Node(
             package='risbot2_node',
             executable='risbot2_node.py',
             output='screen'),
 
-        Node(
-            package='risbot2_node',
-            executable='t265_odom_node.py',
-            name='t265_odom_node',
-            output='screen') ,
+        # Node(
+        #     package='risbot2_node',
+        #     executable='t265_odom_node.py',
+        #     name='t265_odom_node',
+        #     output='screen') ,
     ])

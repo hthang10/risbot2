@@ -1,0 +1,18 @@
+# Heracles Publisher Node parameters for RISBOT2
+# These parameters connect to the Neo4j database where the 3D Scene Graph
+# was loaded by load_scene_graph.py (Step 1).
+#
+# Before launching, set these environment variables:
+#   export HERACLES_IP=localhost
+#   export HERACLES_PORT=7687
+#   export HERACLES_NEO4J_USERNAME=neo4j
+#   export HERACLES_NEO4J_PASSWORD=neo4j_pw
+
+heracles_publisher:
+  ros__parameters:
+    heracles_ip: localhost
+    heracles_port: 7687
+    heracles_neo4j_user: neo4j
+    heracles_neo4j_pass: neo4j_pw
+    object_labelspace: ade20k_mit_label_space.yaml
+    region_labelspace: b45_label_space.yaml

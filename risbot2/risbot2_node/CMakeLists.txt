@@ -17,8 +17,13 @@ install(
     PROGRAMS
     scripts/risbot2_node.py
     scripts/t265_odom_node.py
+    scripts/omniplanner_nav2_bridge.py
+    scripts/dsg_mesh_to_2d_map_node.py
+    scripts/set_initial_pose.py
+    scripts/send_goal.py
     DESTINATION lib/${PROJECT_NAME}
 )
+
 
 
 if(BUILD_TESTING)
