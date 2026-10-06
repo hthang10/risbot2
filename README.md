@@ -1,6 +1,5 @@
 # RISBOT2
-![image](https://github.com/user-attachments/assets/a6be4376-f133-4ab6-86f0-056b13f34615)
-
+<img width="960" height="1280" alt="1c770d236d92ecccb583" src="https://github.com/user-attachments/assets/8060e9e9-c139-448b-8a52-8e99dba7e7cc" />
 
 ## Overview
 - risbot2 folder: program for RISBOT2'PC
