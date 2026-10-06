@@ -1,6 +1,5 @@
 # RISBOT2
 ![image](https://github.com/user-attachments/assets/a6be4376-f133-4ab6-86f0-056b13f34615)
-<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/c8b52160-55ce-4b78-97c8-30218a42b747" />
 
 
 ## Overview
